@@ -21,5 +21,5 @@ before_script:
   - git rm --cached --ignore-unmatch index.html
 
 script:
-  - ./gradlew clean publish -i --continue
+  - ./gradlew clean build -i --continue
   - ./gradlew -b finalize.gradle finalize -i
